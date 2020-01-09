@@ -1,0 +1,13 @@
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.dll.config
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.dll
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.pdb
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.csprojResolveAssemblyReference.cache
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.dll
+C:\Users\Nicolas\documents\visual studio 2013\Projects\OC-Calculus\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.pdb
+C:\Users\Nicolas\SkyDrive\Documents\OpenClassrooms2\Activites\OC-Calculus\OC-Calculus-Sujet\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.csprojResolveAssemblyReference.cache
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.dll.config
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.dll
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\bin\OC-Calculus-WCFService.pdb
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.csprojAssemblyReference.cache
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.dll
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-WCFService\obj\Debug\OC-Calculus-WCFService.pdb

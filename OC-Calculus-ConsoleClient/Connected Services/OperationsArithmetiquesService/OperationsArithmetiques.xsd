@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Plus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nb1" type="xs:double" />
+        <xs:element minOccurs="0" name="nb2" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PlusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PlusResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Moins">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nb1" type="xs:double" />
+        <xs:element minOccurs="0" name="nb2" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoinsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MoinsResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Diviser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nb1" type="xs:double" />
+        <xs:element minOccurs="0" name="nb2" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiviserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DiviserResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Multiplier">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nb1" type="xs:double" />
+        <xs:element minOccurs="0" name="nb2" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MultiplierResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MultiplierResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EstMultipleDe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nb1" type="xs:int" />
+        <xs:element minOccurs="0" name="nb2" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EstMultipleDeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EstMultipleDeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEntieres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chaine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEntieresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChaineDAdditionsEntieresResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsReelles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chaine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsReellesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChaineDAdditionsReellesResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtDeSoustractionsEntieres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chaine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtDeSoustractionsEntieresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChaineDAdditionsEtDeSoustractionsEntieresResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtDeSoustractionsReelles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chaine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtDeSoustractionsReellesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChaineDAdditionsEtDeSoustractionsReellesResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chaine" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieresResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

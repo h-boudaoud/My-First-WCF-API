@@ -1,0 +1,6 @@
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\bin\Debug\OC-Calculus-ConsoleClient.exe.config
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\bin\Debug\OC-Calculus-ConsoleClient.exe
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\bin\Debug\OC-Calculus-ConsoleClient.pdb
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\obj\Debug\OC-Calculus-ConsoleClient.csprojAssemblyReference.cache
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\obj\Debug\OC-Calculus-ConsoleClient.exe
+F:\MesProjets\VisualStudio\WCF\creez-votre-premiere-application-connectee-en-Csharp-net\OC-Calculus-Solution\OC-Calculus-ConsoleClient\obj\Debug\OC-Calculus-ConsoleClient.pdb

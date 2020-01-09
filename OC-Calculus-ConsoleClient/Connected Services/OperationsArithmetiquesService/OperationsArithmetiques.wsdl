@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OperationsArithmetiques" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2762/OperationsArithmetiques.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2762/OperationsArithmetiques.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOperationsArithmetiques_Plus_InputMessage">
+    <wsdl:part name="parameters" element="tns:Plus" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Plus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PlusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Moins_InputMessage">
+    <wsdl:part name="parameters" element="tns:Moins" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Moins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MoinsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Diviser_InputMessage">
+    <wsdl:part name="parameters" element="tns:Diviser" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Diviser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DiviserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Multiplier_InputMessage">
+    <wsdl:part name="parameters" element="tns:Multiplier" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_Multiplier_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MultiplierResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_EstMultipleDe_InputMessage">
+    <wsdl:part name="parameters" element="tns:EstMultipleDe" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_EstMultipleDe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EstMultipleDeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEntieres_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEntieres" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEntieres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEntieresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsReelles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsReelles" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsReelles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsReellesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsEntieres_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtDeSoustractionsEntieres" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsEntieres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtDeSoustractionsEntieresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsReelles_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtDeSoustractionsReelles" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsReelles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtDeSoustractionsReellesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres" />
+  </wsdl:message>
+  <wsdl:message name="IOperationsArithmetiques_ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieresResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOperationsArithmetiques">
+    <wsdl:operation name="Plus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/Plus" message="tns:IOperationsArithmetiques_Plus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/PlusResponse" message="tns:IOperationsArithmetiques_Plus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Moins">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/Moins" message="tns:IOperationsArithmetiques_Moins_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/MoinsResponse" message="tns:IOperationsArithmetiques_Moins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Diviser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/Diviser" message="tns:IOperationsArithmetiques_Diviser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/DiviserResponse" message="tns:IOperationsArithmetiques_Diviser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Multiplier">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/Multiplier" message="tns:IOperationsArithmetiques_Multiplier_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/MultiplierResponse" message="tns:IOperationsArithmetiques_Multiplier_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EstMultipleDe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/EstMultipleDe" message="tns:IOperationsArithmetiques_EstMultipleDe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/EstMultipleDeResponse" message="tns:IOperationsArithmetiques_EstMultipleDe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEntieres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEntieres" message="tns:IOperationsArithmetiques_ChaineDAdditionsEntieres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEntieresResponse" message="tns:IOperationsArithmetiques_ChaineDAdditionsEntieres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsReelles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsReelles" message="tns:IOperationsArithmetiques_ChaineDAdditionsReelles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsReellesResponse" message="tns:IOperationsArithmetiques_ChaineDAdditionsReelles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtDeSoustractionsEntieres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsEntieres" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsEntieres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsEntieresResponse" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsEntieres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtDeSoustractionsReelles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsReelles" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsReelles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsReellesResponse" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtDeSoustractionsReelles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieresResponse" message="tns:IOperationsArithmetiques_ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOperationsArithmetiques" type="tns:IOperationsArithmetiques">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Plus">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/Plus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Moins">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/Moins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diviser">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/Diviser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Multiplier">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/Multiplier" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EstMultipleDe">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/EstMultipleDe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEntieres">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEntieres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsReelles">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsReelles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtDeSoustractionsEntieres">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsEntieres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtDeSoustractionsReelles">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtDeSoustractionsReelles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres">
+      <soap:operation soapAction="http://tempuri.org/IOperationsArithmetiques/ChaineDAdditionsEtSoustractionsEtMultiplicationsEntieres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OperationsArithmetiques">
+    <wsdl:port name="BasicHttpBinding_IOperationsArithmetiques" binding="tns:BasicHttpBinding_IOperationsArithmetiques">
+      <soap:address location="http://localhost:2762/OperationsArithmetiques.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
